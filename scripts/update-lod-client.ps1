@@ -5,7 +5,7 @@
 $scriptDir = $PSScriptRoot
 $repoRoot = Resolve-Path (Join-Path $scriptDir "..")
 $swaggerPath = Join-Path $repoRoot "docs\swagger.json"
-$outputDir = Join-Path $repoRoot "src\lod.client\Client"
+$outputDir = Join-Path $repoRoot "src\lod.client\generated"
 $projectPath = Join-Path $repoRoot "src\lod.client\lod.client.csproj"
 $lockFilePath = Join-Path $outputDir "kiota-lock.json"
 
