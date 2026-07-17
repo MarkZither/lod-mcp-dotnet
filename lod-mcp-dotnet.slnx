@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/lod-mcp-dotnet/lod-mcp-dotnet.csproj" />
+    <Project Path="src/lod.client/lod.client.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/lod-mcp-dotnet.tests/lod-mcp-dotnet.tests.csproj" />

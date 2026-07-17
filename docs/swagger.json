@@ -1,0 +1,427 @@
+{"openapi": "3.0.0",
+                    "info": {
+                        "title": "LOD",
+                        "description": "Public API for lod.lu",
+                        "version": "1.0.0"
+                    },
+                    "paths": {
+                        "/api/{_locale}/advanced-search": {
+                            "get": {
+                                "operationId": "get_advanced_search",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        },
+                        "/api/{_locale}/categories": {
+                            "get": {
+                                "operationId": "get_categories_list",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        },
+                        "/api/{_locale}/categories/{category}": {
+                            "get": {
+                                "operationId": "get_categories_entries",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "category",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string"
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        },
+                        "/api/{_locale}/entries": {
+                            "get": {
+                                "operationId": "get_entries_list",
+                                "parameters": [
+                                    {"name": "_locale",
+                                    "in": "path",
+                                    "required": true,
+                                    "schema": {
+                                        "type": "string",
+                                        "pattern": "lb|de|fr|en|pt|nl",
+                                        "enum": [
+                                            "lb",
+                                            "de",
+                                            "fr",
+                                            "en",
+                                            "pt",
+                                            "nl"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "responses": {
+                                "default": {
+                                    "description": ""
+                                }
+                            }
+                        }
+                    },
+                    "/api/{_locale}/entry/{lod_id}": {
+                        "get": {
+                            "operationId": "get_entries_get",
+                            "parameters": [
+                                {
+                                    "name": "_locale",
+                                    "in": "path",
+                                    "required": true,
+                                    "schema": {
+                                        "type": "string",
+                                        "pattern": "lb|de|fr|en|pt|nl",
+                                        "enum": [
+                                            "lb",
+                                            "de",
+                                            "fr",
+                                            "en",
+                                            "pt",
+                                            "nl"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "lod_id",
+                                    "in": "path",
+                                    "required": true,
+                                    "schema": {
+                                        "type": "string"
+                                    }
+                                }
+                            ],
+                            "responses": {
+                                "default": {
+                                    "description": ""
+                                }
+                            }
+                        }
+                    },
+                    "/api/{_locale}/words-of-the-day": {
+                        "get": {
+                            "operationId": "get_entries_list_wotd",
+                            "parameters": [
+                                {
+                                    "name": "_locale",
+                                    "in": "path",
+                                    "required": true,
+                                    "schema": {
+                                        "type": "string",
+                                        "pattern": "lb|de|fr|en|pt|nl",
+                                        "enum": [
+                                            "lb",
+                                            "de",
+                                            "fr",
+                                            "en",
+                                            "pt",
+                                            "nl"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "responses": {
+                                "default": {
+                                    "description": ""
+                                }
+                            }
+                        }
+                    },
+                    "/api/{_locale}/word-of-the-day": {
+                        "get": {
+                            "operationId": "get_entries_get_wotd",
+                            "parameters": [
+                                {
+                                    "name": "_locale",
+                                    "in": "path",
+                                    "required": true,
+                                    "schema": {
+                                        "type": "string",
+                                        "pattern": "lb|de|fr|en|pt|nl",
+                                        "enum": [
+                                            "lb",
+                                            "de",
+                                            "fr",
+                                            "en",
+                                            "pt",
+                                            "nl"
+                                        ]
+                                    }
+                                }
+                            ],
+                            "responses": {
+                                "default": {
+                                    "description": ""}
+                                }
+                            }
+                        },
+                        "/api/{_locale}/search": {
+                            "get": {
+                                "operationId": "get_search",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        },
+                        "/api/{_locale}/spell": {
+                            "get": {
+                                "operationId": "get_spell",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        },
+                        "/api/{_locale}/spellchecker/check-words": {
+                            "post": {
+                                "operationId": "post_spellchecker_check_words",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        },
+                        "/api/{_locale}/spellchecker/suggestions/{word}": {
+                            "get": {
+                                "operationId": "get_spellchecker_get_suggestions",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "word",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string"
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {"description": ""
+                                }
+                            }}
+                        },
+                        "/api/{_locale}/translations": {
+                            "get": {
+                                "operationId": "get_translations_list",
+                                "parameters": [
+                                    {
+                                        "name": "_locale",
+                                        "in": "path",
+                                        "required": true,
+                                        "schema": {
+                                            "type": "string",
+                                            "pattern": "lb|de|fr|en|pt|nl",
+                                            "enum": [
+                                                "lb",
+                                                "de",
+                                                "fr",
+                                                "en",
+                                                "pt",
+                                                "nl"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "responses": {
+                                    "default": {
+                                        "description": ""
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "components": {
+                        "schemas": {
+                            "NewsListItem": {
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "excerpt": {
+                                        "type": "string"
+                                    },
+                                    "created": {
+                                        "type": "string",
+                                        "format": "date-time"
+                                    },
+                                    "type": {
+                                        "type": "string",
+                                        "default": "news"
+                                    },
+                                    "tweet_url": {
+                                        "type": "string",
+                                        "default": ""
+                                    },
+                                    "slug": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "NewsItem": {
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "excerpt": {
+                                        "type": "string"
+                                    },
+                                    "content": {
+                                        "type": "string"
+                                    },
+                                    "created": {"type": "string",
+                                    "format": "date-time"
+                                },
+                                "slug": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+}
